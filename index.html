@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Hello I'm</span> Justin Hillen.</h1>
+    <p>Network Technician and Cyber Security Student.</p>
+    <img src="image_123650291.JPG" alt="boy" class="w3-image" width="692" height="808">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    
+    <hr style="width:200px" class="w3-opacity">
+    <p>Passionate about the dynamic and ever-evolving fields of networking and cybersecurity, I've dedicated myself to
+        mastering these domains. I find joy in the process of technical troubleshooting, where I've gained invaluable
+        hands-on experience and developed a problem-solving mindset. In an age where connectivity and data security are paramount,
+        my goal is to help organizations thrive in this digital landscape. Whether its fortifying networks against emerging threats,
+        optimizing system performance, or implementing cutting-edge technologies, I'm ready to roll up my sleeves and make a tangible difference. 
+    </p>
+    <h2 class="w3-text-light-grey">My Resume</h2>
+    <img src="Justin-Hillen-Resume-1.png" alt="boy" class="w3-image" width="992" height="1108">
+ 
+    
+
+    </div>
+    
+   
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <h3>Python-BruteForce-FTP</h3>
+        <img src="Artifact2.png" style="width:100%">
+        <p>Python script designed to attempt unauthorized access to an FTP server by systematically trying a large number of username and password combinations.</p>
+        <a href="https://github.com/justinHillen/Python-BruteForce-FTP">Link to project</a>
+      </div>
+
+      <div class="w3-half">
+        <h3>Port-Scanner</h3>
+        <img src="Artifact1.png" style="width:100%">
+        <p>A port scanner is a tool used to identify open ports on a computer or network device. These ports are basically communication channels that allow data to flow between devices. By scanning for open ports, you can get a better understanding of what services are running on a device and whether it might be vulnerable to security risks.</p>
+        <a href="https://github.com/justinHillen/Port-Scanner">Link to projects</a>
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  <div class="w3-row-padding" style="margin:0 -16px">
+    <div class="w3-half">
+      <h3>Heart Disease</h3>
+      <img src="original.jpg" style="width:100%">
+      <p>This project explores a dataset containing health-related features of patients diagnosed with heart disease.</p>
+      <a href="https://github.com/justinHillen/heart_disease">Link to project</a>
+    </div>
+
+  
+  <!-- End photo grid -->
+  </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Cleveland, OH</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: justin.hillen@proton.me</p>
+    </div><br>
+    <p>I hope to hear from you soon!</p>
+
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>

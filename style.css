@@ -1,0 +1,104 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #333;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Media Queries for responsive design (optional) */
+  
+  @media only screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+    nav li {
+      margin: 10px 0;
+    }
+    .dropdown-content {
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+
+  .resume-content {
+    padding: 20px;
+  }
+  
+  .artifacts-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .artifacts-content .project { /* Style for individual project sections */
+    width: calc(33% - 20px); /* Adjust width as needed */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
